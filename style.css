@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.btnPr{
+  background-color: #00ffff;
+  color: #000;
+}
+/* about section styles */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  color: wheat;
+  background-color: black;
+}
+
+.about-left,
+.about-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-left .title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.about-left h5 {
+  margin-bottom: 20px;
+}
+
+.about-left p {
+  margin-bottom: 20px;
+}
+
+.about-left div a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.about-left button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.about-left button:hover {
+  background-color: #45a049;
+}
+
+/* .portfolio */
+
+.portfolio {
+  background-color: black;
+  color: wheat;
+}
+.portfolioContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolioContentImg {
+  height: 200px;
+  width: 450px;
+}
+
+.portfolioH2 {
+  color: wheat;
+  text-align: center;
+  padding: 5px;
+  font-size: xx-large;
+}
+
+/* skill */
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: black;
+  color: wheat;
+  padding: 40px;
+}
+
+.skillsH2 {
+  padding: 10px;
+}
+.skillP {
+  margin-left: 15px;
+}
+
+.skillH2 {
+  color: #00ffff;
+}
+
+/* Contact section styles */
+
+.contact-us {
+  padding: 20px;
+  background-color: black;
+  color: wheat;
+}
+.contactH2 {
+  color: wheat;
+  text-align: center;
+  padding: 5px;
+  font-size: xx-large;
+}
+
+.contact-us .service-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us .input-box {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.message {
+  width: 57%;
+  padding: 30px;
+  /* margin-bottom: 20px; */
+}
+
+.contact-us .submit-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.contact-us .submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+footer div a {
+  color: white;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+footer div a:hover {
+  color: #ddd;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  nav .menu-container li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .portfolio div div {
+    width: 100%;
+  }
+  .portfolioContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+  }
+
+  .portfolioDetails {
+    text-align: center;
+  }
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    /* margin: auto; */
+    gap: 20px;
+    background-color: black;
+    color: wheat;
+    padding: 40px;
+  }
+
+  .skillEducation {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-left .title {
+    font-size: 1.5em;
+  }
+
+  .about-left button,
+  .contact-us .submit-btn {
+    width: 100%;
+  }
+
+  .skills {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    color: wheat;
+    padding: 40px;
+  }
+}
